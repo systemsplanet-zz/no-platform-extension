@@ -1,0 +1,193 @@
+body, html {
+  background-color: black;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  min-height: 200px;
+}
+
+#mainPopup {
+  padding: 10px;
+  padding-bottom: 45px;
+  width: 400px;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.no-platform-error.popup {
+  background: red;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.no-platform-notification {
+  display: flex;
+  align-items: center;
+  border: solid 1px #7b7b7b;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.no-platform-notification span {
+  flex-grow: 1;
+}
+
+.no-platform-notification a {
+  padding-left: 5px;
+}
+
+.no-platform-notification a:hover {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer .left {
+  flex-grow: 1;
+}
+
+.footer .left span {
+  margin-left: 5px;
+}
+
+.request-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-top: 5px;
+  height: 50px;
+  resize: vertical;
+}
+
+.request-form button {
+  margin-right: 5px;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner {
+  height: calc(1em + 5px);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.onoffswitch {
+    position: relative; width: 60px;
+    float: right;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000000; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #EC2E30; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 10px; margin: 5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 36px;
+    border: 2px solid #000000; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.no-platform-button {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 12px;
+  background: #ffffff;
+  padding: 3px 8px;
+  border: solid #000000 1px;
+  text-decoration: none;
+}
+
+.no-platform-button:hover {
+  background: #e6e6e6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.no-platform-button.dark {
+  background: #000;
+  color: #FFF;
+}
+
+.no-platform-button.dark:hover {
+  background: #585858;
+}
+
+.no-platform-error a {
+  float: right;
+  text-decoration: none;
+}
+
+.no-platform-error a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner {
+  animation: spinner .8s linear infinite;
+  animation-play-state: paused;
+}
+
+.spinner.loading {
+  animation-play-state: running;
+}
+
