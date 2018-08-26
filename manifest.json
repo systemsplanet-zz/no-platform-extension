@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "js/background.bundle.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon_toolbar.png",
+      "default_popup": "browser_action.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/youtube.css" ],
+      "js": [ "js/inject.bundle.js", "js/youtube.bundle.js" ],
+      "matches": [ "https://www.youtube.com/*", "http://www.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "",
+   "homepage_url": "https://github.com/MACCNYC/no-platform-extension",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "256": "icons/iconFull.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwTKNBJlNXYzVcoteCPNRgRIN3QDU/tg+J3Yz78fN2XUb26vtro8d9bB+LAZ8dXbve5OorILuMQsykXiT29p9/aE1DSV2zSpWr2zUNjq234Sk49WW29r8wNJ665JRrX0pVnH1kwDUaCTQ5rzq8Td0BWIB1X3UeUfuCj9PyOS2HKbUfDwQN5eQ0VNNDHwj/4Oq1bmvlG22MipYLFbJtMcciQnMcPFDPb7ndldPkasOj1VSsaD8sX1c4qR4dsZD3ZCJVhcEkojxN5+f+1CUENaElDUeVs8QHt2lp/Tfzervq+byfwdyW6chnykiWZYn7paCMSv15tQzKWDYO6QUm8sDAwIDAQAB",
+   "manifest_version": 2,
+   "name": "No Platform For Fascism Tool Kit",
+   "permissions": [ "storage", "tabs", "alarms", "http://noplatform.herokuapp.com/api/*", "http://www.youtube.com/*", "https://www.youtube.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.3",
+   "web_accessible_resources": [ "img/NoPlatform_small.png", "img/loading.svg" ]
+}
